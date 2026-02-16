@@ -1,0 +1,136 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Cormorant Garamond", serif;
+    background-color: #F9F7F2;
+    color: #3D2B1F;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease; 
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --drop-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+    --main-color: #3D2B1F;
+
+}
+ 
+/* Navbar */
+.navbar{
+    width: 100%;
+    padding: 30px 0;
+}
+
+.container{
+    width: 85%;
+    margin:auto;
+}
+
+.container h2{
+    font-weight:700;
+    font-size:26px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #1A1A1A;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    margin-left:40px;
+    font-weight: 500;
+    font-size:15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.nav a:hover {
+    color: #000;
+}
+
+.nav .cart{
+    margin-left: 40px;
+    padding: 8px 25px;
+    border: 1px solid #1A1A1A;
+    border-radius: 0px;
+    color: #1A1A1A;
+}
+
+.nav .cart:hover{
+    background-color: #1A1A1A;
+    color: #FFF;
+}
+
+/* Main Section */
+.main{
+    width:100%;
+}
+
+.main-container{
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-container h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #1A1A1A;
+}
+
+.main-container p {
+    font-size:18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #4A4A4A;
+    max-width: 500px;
+}
+
+.main-container .btn {
+    background: var(--main-color);
+    padding: 18px 40px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 0px;
+    box-shadow: var(--drop-shadow);
+}
+
+.main-container .btn:hover {
+    background: #241912;
+    transform: translateY(-2px);
+}
+
+.main-container img {
+    width: 100%;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+}
+
